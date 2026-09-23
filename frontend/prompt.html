@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Prompt App - Login</title>
+
+  <link
+    rel="stylesheet"
+    href="/style.css"
+  >
+</head>
+
+<body>
+  <main class="container auth-page">
+
+    <h1>Prompt App</h1>
+
+    <section class="card">
+      <h2>Login</h2>
+
+      <form id="login-form">
+        <input
+          id="login-email"
+          type="email"
+          placeholder="Email"
+          required
+        >
+
+        <input
+          id="login-password"
+          type="password"
+          placeholder="Password"
+          minlength="6"
+          required
+        >
+
+        <button type="submit">
+          Login
+        </button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Create account</h2>
+
+      <form id="register-form">
+        <input
+          id="register-email"
+          type="email"
+          placeholder="Email"
+          required
+        >
+
+        <input
+          id="register-password"
+          type="password"
+          placeholder="Password"
+          minlength="6"
+          required
+        >
+
+        <button type="submit">
+          Register
+        </button>
+      </form>
+    </section>
+
+    <p id="message"></p>
+
+  </main>
+
+  <script
+    type="module"
+    src="/main.ts"
+  ></script>
+</body>
+</html>
